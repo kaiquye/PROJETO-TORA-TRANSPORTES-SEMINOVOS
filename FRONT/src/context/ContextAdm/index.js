@@ -348,7 +348,6 @@ export function AuthContextProvider({ children }) {
     }
   };
   let getListMsg = (params) => {
-    alert("id", params);
     socket.emit("getList", {
       id: params,
     });

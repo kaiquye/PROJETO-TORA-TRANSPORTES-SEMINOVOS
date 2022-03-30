@@ -94,7 +94,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
-    background-image: url('./image/Next.png')
+    background-image: url('./image/Next.png');
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+.div_informacoes_mais div{
+    word-wrap: break-word;
 }
 .div_informacoes_mais:hover{
     opacity: 100%;
@@ -104,6 +109,7 @@
 .div_informacoes_mais h1 {
     font-family: Arial, Helvetica, sans-serif;
     border-bottom:  2px solid #009d44;
+    word-wrap: break-word;
 }
 .div_informacoes_mais img {
     width: 33px;

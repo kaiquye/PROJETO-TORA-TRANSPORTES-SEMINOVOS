@@ -18,17 +18,17 @@ export function RadaPe() {
       </div>
       <div className="contatos-rodape">
         <ul>
-          <h2>Contatos - Matriz </h2>
-          <li>Teste 1</li>
-          <li>Teste 1</li>
-          <li>Teste 1</li>
+          <h2>Av. Ápio Cardoso, 20 - Cincão
+Contagem-MG | CEP: 32371-615 </h2>
+          <li>(31) 2191-2522</li>
         </ul>
         <ul>
           <h2>Contatos - Filial </h2>
-          <li>Teste 1</li>
-          <li>Teste 1</li>
-          <li>Teste 1</li>
-          <li>Teste 1</li>
+          <li>TRod. Fernão Dias, BR-381 (km 493) - B. Amazonas
+Contagem-MG | CEP: 32260-5301</li>
+          <li>(31) 3597-1604</li>
+          <li>(31) 3592-0834</li>
+          <li>(31) 9 9234-3283</li>
         </ul>
       </div>
     </section>
