@@ -1,0 +1,132 @@
+.section_banner_PagePrincipal{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset rgb(255, 255, 255) 0px 19px 102px 120px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.section_banner_PagePrincipal p{
+    display: flex;
+    text-align: end;
+    font-size: 19px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
+    border-bottom-right-radius: 7px
+}
+.imagem_banner_PagePrincipal{
+    width: 100%;
+    height: 80%;
+    overflow:hidden;
+    background-position: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('./image/wallpaper.jpg');
+    border-end-start-radius: 100px;
+    box-shadow: inset rgba(0, 0, 0, 0.425) 10px -10px 55px 30px;
+}
+
+.filtros-banner{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    opacity: 98%;
+}
+.porque-banner{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.porque-banner option {
+    padding: 12220px;
+    color: rgb(122, 122, 122);
+    font-weight: 600;
+}
+.btn-filtro-banner{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+    background-color: white;
+    font-weight: 400;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-banner :hover{
+    background-color: #f1f1f1;
+}
+.btn-banner{
+    width: 100%;
+    display: flex;
+}
+.div-image-det-banner{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.div-image-det-banner .div-filtros-banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+input{
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+}
+.div-filtro-marca-modelo  input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.div-filtro-marca-modelo  select{
+    padding : 12px;
+    border: none;
+}
+.div-filtro-marca-modelo button {
+    width: 150px;
+    background-color: red;
+    border: none;
+    height: 320px;
+    color: white;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.div-filtro-marca-modelo button:hover{
+    background-color: rgb(173, 173, 173);
+}
+.div-filtro-marca-modelo{
+    width: 80%;
+    height: 70%;
+    display: grid;
+    gap: 2px;
+    grid-template-rows: auto auto 30px;
+    grid-template-columns: auto auto;
+}
+.div-filtro-marca-modelo div {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 700px){
+  .imagem_banner_PagePrincipal{
+      background-position: top;
+      background-size: 590px;
+  }
+  .btn-banner{
+      display: grid;
+      grid-template-columns: auto auto auto;
+  }
+}

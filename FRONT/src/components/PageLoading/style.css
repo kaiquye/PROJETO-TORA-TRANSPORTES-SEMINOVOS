@@ -1,0 +1,21 @@
+.div_PageLoading{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.div_PageLoading img {
+    width: 200px;
+    height: 200px;
+}
+.loading-adm{
+    height: 10px;
+}
+.div_PageLoading-adm{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+}

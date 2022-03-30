@@ -1,0 +1,28 @@
+.div_error{
+    width: 100%;
+    height: 140vh;
+    color: rgb(124, 121, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div_error img {
+    width: 190px;
+}
+.div_error button{
+    background-color: blueviolet;
+    border: none;
+    width: 100px;    
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.div_error button:hover{
+    background-color: #919ddf;
+}
+
+.div-adm-img {
+    width: 100px;
+}

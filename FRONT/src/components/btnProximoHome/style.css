@@ -1,0 +1,19 @@
+.div_btnProximo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.div_btnProximo button{
+    width: 90PX;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 60%;
+}
+.div_btnProximo button:hover{
+    opacity: 100%;
+}

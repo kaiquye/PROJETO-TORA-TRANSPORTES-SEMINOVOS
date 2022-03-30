@@ -1,0 +1,214 @@
+.section_PreviwAnuncio{
+    display: flex;
+    width: 240px;
+    height: 400px;
+    max-height: 350px;
+    min-height: 400px;
+    flex-direction: column;
+    padding: 1px;
+    border: 2px rgb(236, 236, 236) solid;
+}
+.imagem_PreviwAnuncio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    overflow:hidden;
+    cursor: pointer;
+    background-color: rgba(209, 209, 209, 0.426);
+}
+.imagem_PreviwAnuncio img{
+    width: 100%;
+    opacity: 90%;
+    transition: all 1.0s;
+}
+.imagem_PreviwAnuncio  img:hover{
+    opacity: 75%;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.div_informacoes_anuncio{
+    min-height: 170px;
+    max-height: 170px;
+    justify-content: end;
+    justify-content: end;
+}
+.proposta-previw{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    transform: all 1.0s;
+}
+.proposta-previw button{
+    font-size: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(29, 185, 42);    
+    padding: 3px;
+    opacity: 70%;
+    border-end-start-radius: 12px;
+}
+.div_informacoes_anuncio h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #484848;
+    font-size: 20px;
+    font-weight: 520;
+}
+.titulo_previwAnuncio{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 680;
+    color: #e46116;
+    font-size: 14px;
+}
+.informacoes_previwAnuncio{
+    font-size: 11px;
+    font-weight: 650;
+    max-height: 1px;
+    color : #9b9b9b;
+    padding: 5px;
+}
+.div_button_anuncio_previw {
+    padding-top: 3px;
+    display: flex;
+}
+.div_button_anuncio_previw{
+ 
+}
+.enviar-proposta{
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 72%;
+    border: none;
+    padding:7px;
+    cursor: pointer;
+    background-color: #ff7300;
+    color: rgb(11, 173, 25);
+    font-size: 13px;
+}
+.button-visitar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 72%;
+    border: none;
+    padding:7px;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: 11px;
+}
+.link-visitar{
+    color: green;
+}
+    /* background-color: #009d44; */
+.div_button_anuncio_previw button:hover{
+    background-color: rgb(16, 189, 88);
+    color: black;
+    transition: all 0.4s;
+}
+.img-proposta2{
+    width: 240px;
+    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    opacity: 30%;
+}
+.proposta-previw-em-negociacao{
+    width: 240px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    transform: all 1.0s;
+    opacity: 100%;
+}
+/* .div_titulo_lateral{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+} */
+
+/* .section_PreviwAnuncio{
+    display: flex;
+    width: 290px;
+    height: 380px;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: rgb(214, 211, 211) 0px 0px 12px 2px ;
+    padding: 10px;
+}
+.imagem_PreviwAnuncio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:200px;
+    overflow:hidden;
+    cursor: pointer;
+    box-shadow:  inset rgb(20, 241, 0) 0px 0px 20px 10px;
+    background-color: rgb(24, 143, 0);
+}
+.imagem_PreviwAnuncio img{
+    width: 100%;
+    opacity: 90%;
+    transition: all 1.0s;
+}
+.imagem_PreviwAnuncio  img:hover{
+    opacity: 75%;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.div_informacoes_anuncio{
+}
+.div_informacoes_anuncio h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #395459;
+    font-weight: 520;
+}
+.titulo_previwAnuncio{
+        font-family: Arial, Helvetica, sans-serif;
+    font-weight: 580;
+    color: #575353;
+}
+.informacoes_previwAnuncio{
+    font-size: 11px;
+    font-weight: 650;
+    color : #9b9b9b;
+    padding: 5px;
+}
+.div_button_anuncio_previw {
+    padding-top: 8px;
+}
+.div_button_anuncio_previw button{
+    width: 100%;
+    height: 102%;
+    border: none;
+    padding:7px;
+    cursor: pointer;
+    background-color: #009d44;
+    color: white;
+    font-size: 13px;
+}
+.div_button_anuncio_previw button:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.4s;
+}
+/* .div_titulo_lateral{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+} */ 

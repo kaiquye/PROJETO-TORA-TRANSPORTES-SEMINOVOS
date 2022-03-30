@@ -1,0 +1,37 @@
+/* .img-slider-anuncio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    max-height: 30px;
+    overflow:hidden;
+}
+.img-slider-anuncio {
+    width: 100%;
+    min-height: 550px;
+    max-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.img-slider-anuncio  img {
+    width: 70%;
+    height: auto;
+}
+.slider-editar-anuncio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.btn-edit-slider{
+    width: 200px;
+}
+
+.img-slider-anuncio .div{
+    background-color: rebeccapurple;
+} */

@@ -1,0 +1,87 @@
+.div_SobreHome{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    background-color: white;
+    border-top: 9px solid #e46116;
+}
+.div_condicoes_SobreHome{
+    height: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('./imagem/bullitouren-oliverraatz-png--81224-.jpg');
+    background-size : 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 2px;
+    border-bottom: 5px solid #e46116;
+}
+.div_condicoes_SobreHome div {
+    width: 300px;
+    background-color: #038C33;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.box-condicoes{
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.div_local_SobreHome {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 54%;
+}
+.div_endereço_SobreHome{
+    width: 100%;
+   
+    color: rgb(73, 73, 73);
+}
+.div_endereço_SobreHome ul {
+    list-style: none;    
+}
+.div_endereço_SobreHome h1 {
+    color: #e46116;
+}
+.div_image_SobreHome{
+    width: 20px;
+    height: 20px;
+}
+.div_image_SobreHome img {
+    width: 40px;
+}
+.div_maps_SobreHome{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width: 100%;
+    height: 97%;
+}
+.div_condicoes_SobreHome div img {
+    width: 50px;
+    padding-bottom: 15px;
+}
+@media (max-width: 880px){
+    .div_condicoes_SobreHome{
+        display: flex;
+        flex-direction: column;
+    }
+    .div_local_SobreHome{
+        display: flex;
+        flex-direction: column;
+    }
+    .div_condicoes_SobreHome {
+        background-size : 200%;
+
+    }
+}

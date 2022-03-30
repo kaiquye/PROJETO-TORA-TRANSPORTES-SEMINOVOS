@@ -1,0 +1,6 @@
+.page-novo-anuncio{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}

@@ -1,0 +1,66 @@
+.princial-proposta {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.img-proposta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-proposta img {
+  border-radius: 40px;
+  width: 500px;
+}
+.img-proposta p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+ color: orange;
+}
+.conteudo-proposta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset rgba(192, 192, 192, 0.692) 0px -1px 10px 6px;
+  width: 100%;
+  height: 90vh;
+}
+.buttons-escolhar-proposta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset rgba(199, 199, 199, 0.445) 0px 10px 10px 10px;
+}
+.buttons-escolhar-proposta img {
+  margin-bottom: 58px;
+  width: 50px;
+}
+.buttons-conversa {
+  display: flex;
+  width: 100%;
+}
+.button-voltar-conversa {
+  width:100%;
+  background-color: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.button-voltar-conversa:hover{
+    background-color: rgb(161, 161, 161);
+}
+.button-apagar-conversa {
+  width: 100%;
+  background-color: rgb(190, 190, 190);
+  border: none;
+  color: white;
+  cursor: pointer;
+}

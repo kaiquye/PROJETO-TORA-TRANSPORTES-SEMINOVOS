@@ -1,0 +1,27 @@
+.section_Pagina_Anuncio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 670px auto;
+  grid-template-rows: auto auto auto auto;
+}
+.div_slider_pagina_anuncio {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  border-bottom: 1px solid rgb(167, 167, 167);
+
+}
+.div_info_lateral_pagina_anuncio {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 10px;
+}
+.div_info_bottom_pagina_anuncio {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+@media (max-width: 1270px){
+    .section_Pagina_Anuncio{
+      display: flex;
+      flex-direction: column;
+    }
+}

@@ -1,0 +1,60 @@
+.section_ListaDeAnuncios{
+    width: auto;
+    height: auto;
+    display:  grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+}
+@media (max-width: 1160px){
+    .section_ListaDeAnuncios{
+        padding-left: 70px;
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 500px 500px;
+    }
+}
+@media (max-width: 1160px){
+    .section_ListaDeAnuncios{
+        display: grid;
+        gap: 7px;
+        
+    }
+}
+
+@media (max-width: 880px){
+    .section_ListaDeAnuncios{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+}
+
+/* .section_ListaDeAnuncios{
+    width: auto;
+    height: auto;
+    display:  grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows:  500px 500px;
+    gap: 25px;
+    margin-top: 10px;
+}
+@media (max-width: 1160px){
+    .section_ListaDeAnuncios{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 500px 500px;
+    }
+}
+@media (max-width: 1160px){
+    .section_ListaDeAnuncios{
+        display: grid;
+        gap: 7px;
+    }
+}
+
+@media (max-width: 880px){
+    .section_ListaDeAnuncios{
+        display: flex;
+        flex-direction: column;
+    }
+} */

@@ -1,0 +1,128 @@
+.section_informacoes_anuncio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section_informacoes_anuncio h1{
+    padding-left: 10px;
+    padding: 20px;
+    font-family: serif;
+    color: #f1f1f1;
+}
+.name_ficha_tecnica H1 {
+    color : #ff7b00;
+    width: 80%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list_informacoes_anuncio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+}
+.list_informacoes_anuncio ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 15px;
+}
+.list_informacoes_anuncio img{
+    width: 305px
+}
+.list_informacoes_anuncio img:hover{
+    opacity: 50%;
+}
+.section_informacoes_anuncio p{
+    padding: 2px;
+    width: 90%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: white;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+.section_informacoes_anuncio p button{
+    width: 100%;
+    text-align: start;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+.section_informacoes_anuncio li p :hover{
+    background-color: rgb(235, 235, 235);   
+}
+.div_button button{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.div_button button:hover{
+    color: #009d44;
+}
+.div_ficha_tecnica_anuncio{
+    width: 100%;
+    display: flex;
+    padding-top: 0px;
+    justify-content: center;
+    background-color: #009d44;
+}
+.div_ficha_tecnica_anuncio label{
+    color: #ff7b00;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.div_ficha_tecnica_anuncio div ul{
+    list-style: none;
+}
+.div_informacoes_mais{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    height: 130px;
+    box-shadow: inset rgb(246, 246, 246) 0px -40px 80px 1px;
+    background-color: #ffffff;
+    background-size: 10%;
+    border-bottom: 50px solid #009d44;
+    transition: all 0.7s;
+    cursor: pointer;
+    opacity: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-image: url('./image/Next.png')
+}
+.div_informacoes_mais:hover{
+    opacity: 100%;
+    height: 500px;
+   box-shadow: inset rgb(255, 255, 255) 0px -10px 80px 10px;
+}
+.div_informacoes_mais h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom:  2px solid #009d44;
+}
+.div_informacoes_mais img {
+    width: 33px;
+    height: 33px;
+}
+.div_informacoes_mais div {
+    width: 500px;
+}
+.div_informacoes_mais div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 990px){
+    .div_ficha_tecnica_anuncio{
+        display: flex;
+        flex-direction: column;
+    }
+    .list_informacoes_anuncio{
+        width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+.entrar-contato-static{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    width: 10px;
+    height: 95%;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+.entrar-contato-static button{
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    opacity: 70%;
+}

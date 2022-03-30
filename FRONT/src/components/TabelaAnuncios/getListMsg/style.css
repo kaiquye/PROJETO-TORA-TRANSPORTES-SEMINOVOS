@@ -1,0 +1,78 @@
+.section-msg{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+    background-color:rgba(255, 255, 255, 0.459);
+}
+.section-msg h4{
+    color: rgb(144, 144, 144);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.msg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 5px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset rgba(201, 201, 201, 0.363) 0px -20px 55px 5px;  
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.msg h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(82, 82, 82);
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.msg label{
+    padding-left: 10px;
+    font-size: 11px;
+    color: rgb(126, 126, 126);
+    white-space: normal
+}
+.button-list-msg{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: end;
+}
+.button-responder{
+    width: auto;
+    height: 20px;
+    background-color: #65c489b4;
+    border: none;
+    color: white;
+    border-radius: 3px; 
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.link-responder{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+.button-responder:hover{
+    background-color: rgba(255, 166, 0, 0.664);
+    color: black;
+}
+.button-apagar-msg:hover{
+    background-color: rgba(179, 90, 90, 0.788)
+    ;
+    color: black;
+}
+.button-apagar-msg{
+    width: 6%;
+    border-radius: 3px; 
+    height: 20px;
+    background-color: rgb(117, 183, 238);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,105 @@
+.section_lateral_anuncio{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: auto auto;
+    box-shadow: rgb(243, 243, 243) 0px 3px 7px 10px;
+    padding-bottom: 9px;
+}
+.div_titulo_lateral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.informacoes_lateral{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.informacoes_lateral label{
+    border-bottom: 2px solid rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div_lateral_1{
+    width: 200px;
+    height: 100%;
+}
+.titulo_lateral{
+    padding-top: 10px;
+    font-size: 29px;
+    color: #747474;
+    font-weight: 600;
+}
+.modelo_lateral{
+    width: 160%;
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 30px;
+    color: #ffa600;
+}
+.div_lateral_1 img {
+    width: 15px;
+    height: 15px;
+}
+.div_lateral_2{
+    width: 350px;
+    height: 100%;
+}
+.imagem_lateral{
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: rgb(6, 187, 36) 2px solid;
+}
+.imagem_lateral img{
+    width: 23%;
+    height: 28%;
+}
+.div_contato_lateral{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.div_contato_lateral a{
+    text-decoration: none;
+    color: white;
+}
+.div_contato_lateral label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div_contato_lateral button{
+    margin-top: 10px;
+    width: 90%;
+    border-bottom: none;
+    padding: 10px;
+    border: none;
+    background-color: #29A632;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.div_contato_lateral button:hover{
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+.div_lateral_2 iframe{
+    width: 99%;
+}
+.qrcodediv{
+    transition: all .5s ease;
+    display: none;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+}

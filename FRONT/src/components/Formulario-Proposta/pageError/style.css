@@ -1,0 +1,25 @@
+.erro-cadastro-proposta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+.erro-cadastro-proposta p {
+    color: rgb(247, 247, 247);
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    padding: 2px;
+    border-radius: 10px;
+}
+.erro-cadastro-proposta button{
+    background-color: red;
+    color: white;
+    border: none;
+    width: 15%;
+    padding: 6px;
+    cursor: pointer;
+}
+.erro-cadastro-proposta button:hover{
+    background-color: rgba(114, 221, 140, 0.534);
+}

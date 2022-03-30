@@ -1,0 +1,168 @@
+.section-main-proposta{
+    background-color: rebeccapurple;
+    display: flex;
+    width: 100%;
+}
+.div-proposa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../../components/SobreHome/imagem/bullitouren-oliverraatz-png--81224-.jpg');
+}
+.button1-proposta{
+    background-color: green;
+    border: none;
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+.button2-proposta{
+    background-color: orange;
+    border: none;
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+.email-proposta{
+    width: 49%;
+    border: none;
+    color: rgb(83, 83, 83);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.email-proposta:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.escolha-email-proposta{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.escolha-email-proposta button{
+    border: none;
+    background-color: green;
+    color: white;
+    width: 10%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.escolha-email-proposta button:hover{
+    background-color: rgb(255, 102, 0);
+    color: rgb(87, 87, 87);
+}
+.button1-proposta:hover{
+    color: rgb(85, 85, 85);
+    background-color: rgb(214, 245, 255);
+}
+.button2-proposta:hover{
+    color: rgb(85, 85, 85);
+    background-color: rgb(214, 245, 255);
+}
+.chat-proposta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.chat-proposta form{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.nome-div-proposta{
+    width: 100%;
+}
+.nome-div-proposta input{
+    width: 88%;
+}
+.main-mensagems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+.main-mensagems input{
+    height: 3%;
+    margin-top: 2px;
+    border: 2px solid rgb(194, 194, 194);
+}
+.main-mensagems input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.div-todas-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 400px;
+    overflow: scroll;
+    border-radius: 10px;
+}
+.mensagem-proposta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: inset rgba(185, 185, 185, 0.26) 0px 0px 35px 23px;
+    width: auto;
+    height: 350px;
+    font-size: 11px;
+}
+.mensagem-proposta-tl{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: rgb(0, 83, 116) 0px 10px 10px 10px ;
+    background-color:  rgba(202, 202, 202, 0.267);
+    box-shadow: inset rgba(145, 145, 145, 0.26) 0px 1px 12px 5px;
+    margin-bottom: 4px;
+    padding: 2px;
+}
+.mensagem-proposta-tl label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div-enviar-msg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    width: 100%;
+}
+.div-enviar-msg button{
+    margin-top: 2px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.voltar-btn-proposta{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 30%;
+    border-radius: 15px;
+    cursor: pointer;
+}

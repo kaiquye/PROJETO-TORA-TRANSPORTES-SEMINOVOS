@@ -1,0 +1,98 @@
+.section_filtro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(212, 211, 211) 0px 5px 5px 5px;
+}
+.div_filtro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.div_filtro div{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ordem{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    opacity: 50%;
+}
+.ordem select{
+    width: 30%;
+    padding: 3px;
+    border: 1px solid rgb(197, 197, 197);
+}
+.div_filtro input{
+    width: 90%;
+    padding: 8px;
+    border : none;
+    background-color: rgb(245, 245, 245);
+}
+.div_filtro input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.div_filtro select{
+    width: 95%;
+    padding: 8px;
+}
+.div_filtro button{
+    width: 95%;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 1.0s;
+}
+.marca-button{
+    width: 153333333333333333px;
+    height: 100%;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 1.0s;
+    filter: grayscale(1);
+}
+.marca-button  button:hover{
+    color: black;
+    background-color: white;
+}
+.div_filtro button:hover{
+    color: black;
+    background-color: white;
+}
+.section-button-marcar{
+    width: 90%;
+    height: 290px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    overflow:auto;  
+}   
+.marca-button{
+    width: 100%;
+    height: 100%;
+}
+.buscar-anuncios-filtro-button{
+    background-color: #009d44;
+    color : rgb(214, 214, 214);
+}
+.limpar-anuncios-filtro-button{
+    background-color: rgb(56, 55, 55);
+       color : rgb(214, 214, 214);
+}
+.section-modelo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

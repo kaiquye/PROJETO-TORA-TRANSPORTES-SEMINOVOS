@@ -1,0 +1,32 @@
+.seciton-infosdados{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-main-infos{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.div-main-infos div {
+    width: 240px;
+    height: 130px;
+    box-shadow:  inset #08365510 -3px  -7px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:  column;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom: 9px solid  rgb(55, 111, 194);
+}
+.div-main-infos img {
+    justify-content: center;
+    width: 17px;
+    background-position: center;
+    align-items: center;
+}

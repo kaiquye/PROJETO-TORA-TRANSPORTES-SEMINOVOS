@@ -1,0 +1,18 @@
+.div_carrege_10_fotos{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div_carrege_10_fotos img {
+    width: 100px;
+    height: auto;
+}
+.div_carrege_10_fotos h1{
+    color: rgb(103, 131, 163);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+}

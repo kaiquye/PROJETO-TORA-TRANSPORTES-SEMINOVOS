@@ -1,0 +1,50 @@
+.section_rodape{
+    height: auto;
+    width: auto;
+    position: static;
+    color: rgb(255, 255, 255);
+    bottom: 0px;
+    width: 100;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(0, 0, 0);
+    background-image:
+    linear-gradient(
+      to right, 
+      black,
+      orange
+      );
+    background-image: url('./black-logo-tora.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mensagem-rodape{
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mensagem-rodape div {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  padding-left: 20px;
+  text-align: start;
+}
+.mensagem-rodape div button{
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+.contatos-rodape{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+}

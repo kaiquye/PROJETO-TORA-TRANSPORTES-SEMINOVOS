@@ -1,0 +1,48 @@
+.section-form-proposta{
+    width: 100%;
+    height: 100%;
+}
+.div-form-proposta{
+    width:  100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div-form-proposta button{
+    background-color: orange;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.form-proposta{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.form-proposta div{
+    width: 100%;
+}
+.form-proposta input{
+    width: 93%;
+    font-size: 13px;
+    border: 2px solid rgb(197, 197, 197);
+    color: rgb(95, 95, 95);
+}
+.form-proposta input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.form-proposta textarea{
+    padding: 10px;
+    width: 475px;
+    max-width: 475px;
+    height: 250px;
+    max-height: 250px;
+}

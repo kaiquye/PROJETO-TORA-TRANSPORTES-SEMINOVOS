@@ -1,0 +1,19 @@
+.divUploadImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputUploadImg{
+    width: 100%;
+    color: white;
+}
+.inputUploadImg{
+    letter-spacing: 1px;
+    font-size: 11px;
+    color: #333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+    vertical-align: middle;
+}

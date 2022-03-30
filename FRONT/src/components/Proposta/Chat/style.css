@@ -1,0 +1,199 @@
+.section-main-proposta {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-proposta {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo-1-mensagens-proposta {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campo-2-mensagens-proposta {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset rgb(233, 233, 233) 4px 4px 20px 9px;
+    overflow: scroll;
+}
+
+.campo-mensagens-proposta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    word-wrap: break-word;
+}
+
+.campo-mensagens-proposta p {
+    font-weight: 700;
+    color: rgb(88, 88, 88);
+}
+
+.mensagem-vendedor {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(62, 241, 101);
+    border-radius: 14px;
+    padding: 1px;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.mensagem-cliente {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset rgba(209, 209, 209, 0.308) 0px -10px 10px 10px;
+    border-radius: 14px;
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 19px;
+}
+
+.mensagem-vendedor p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mensagem-vendedor label {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-nome-cliente-proposta {
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.input-nome-cliente-proposta input {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 10px;
+}
+
+.input-nome-cliente-proposta input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.mensagem-input-section {
+    width: 99%;
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.input-mensagem {
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-mensagem input {
+    width: 99%;
+    height: 10px;
+}
+
+.input-mensagem input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.buttons-propostas {
+    display: flex;
+    width: 100%;
+}
+
+.buttons-propostas .button-enviar {
+    background-color: rgb(0, 152, 240);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button-voltar {
+    width: 100%;
+    background-color: #4e4e4e;
+    border: none;
+    color: white;
+    padding: 5;
+    cursor: pointer;
+}
+
+.button-enviar:hover {
+    background-color: rgb(202, 235, 255);
+}
+
+.email-chat-propostas {
+    width: 375px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-chat-propostas input {
+    width: 93%;
+    text-align: center;
+}
+
+.email-chat-propostas button {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+
+}
+
+.email-chat-propostas button:hover {
+    background-color: #4e4e4e;
+}
+
+.email-chat-propostas input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.button-apagar- {
+    border: none;
+    background-color: white;
+}
+
+.button-enviar- {
+    border: none;
+    background-color: white;
+}
