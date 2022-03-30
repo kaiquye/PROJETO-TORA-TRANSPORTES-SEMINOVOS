@@ -27,9 +27,10 @@
 .campo-2-mensagens-proposta {
     width: 100%;
     height: 400px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.849);
     box-shadow: inset rgb(233, 233, 233) 4px 4px 20px 9px;
     overflow: scroll;
+    background-size: 10px;
 }
 
 .campo-mensagens-proposta {
@@ -45,17 +46,20 @@
 }
 
 .mensagem-vendedor {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(62, 241, 101);
-    border-radius: 14px;
+    background-color: rgb(0, 132, 255);
+    border-radius: 24px;
     padding: 1px;
-    font-size: 12px;
+    font-size: 15px;
     padding-bottom: 5px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
 }
 
 .mensagem-cliente {
@@ -64,11 +68,15 @@
     text-align: end;
     background-color: rgb(255, 255, 255);
     box-shadow: inset rgba(209, 209, 209, 0.308) 0px -10px 10px 10px;
-    border-radius: 14px;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 24px;
     font-size: 12px;
     padding-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
     padding-right: 19px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
 }
 
 .mensagem-vendedor p {
@@ -78,8 +86,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .mensagem-vendedor label {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 

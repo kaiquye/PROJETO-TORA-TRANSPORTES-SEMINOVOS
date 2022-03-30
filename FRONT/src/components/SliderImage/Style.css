@@ -12,16 +12,16 @@
     align-items: center;
     width: 550px;
     height: auto;
-    min-height: 600px;
+    min-height: 400px;
     overflow:hidden;
 }
+
 .caroulse{
     width: 100%;
 }
 .caroulse div {
     width: 100%;
     height: auto;
-    margin-bottom: -55px;
     display: flex;
 }
 

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router';
 import lixeira from './excluir.png'
 import voltar from './de-volta.png'
+import pessoas from './pessoas.png'
 import './style.css'
 
 
@@ -41,9 +42,12 @@ export function Chat(props) {
                 props.mensagems.map((mensagem) => (
                   <div className={mensagem.user === 'Vendedor' ? 'mensagem-vendedor' : 'mensagem-cliente'}
                   >
-                    {console.log(mensagem)}
-                    <p><stron>{mensagem.user}</stron></p>
-                    <label>{mensagem.msg}</label>
+                    <p><stron>{mensagem.user}
+                  <img style={{  width : '20px' }} src={pessoas} />
+
+                    </stron></p>
+                    <label>{mensagem.msg}
+                    </label>
                   </div>
                 ))
               }
