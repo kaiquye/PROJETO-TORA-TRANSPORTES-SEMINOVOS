@@ -76,14 +76,13 @@ export function Chat(props) {
           </div>
           <button className='button-enviar'
             onClick={() => {
+              alert('enviando')
               if (!props.msg) return alert('mensagem vazia');
-              props.ConectarIo()
               props.EnviarMsg();
             }}
           >
             Enviar mensagem
           </button>
-
         </div>
       </main>
     </section>

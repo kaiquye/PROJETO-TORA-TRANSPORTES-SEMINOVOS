@@ -54,8 +54,9 @@
     padding-top: 7px;
     padding-bottom: 5px;
     margin-top: 10px;
-    border-radius: 20px;
-    background-color: rgb(55, 111, 194);
+    border-radius: 35px;
+    border-bottom: #006db6 5px solid;
+    box-shadow: rgba(0, 0, 0, 0.207) 0px 7px 13px 3px;
 }
 .titulo-tabela{
     width: 100%;
@@ -297,12 +298,12 @@
 }
 .novoanuncio2{
     border: none;
-    color: rgb(99, 99, 99);
-    box-shadow: inset rgba(102, 19, 19, 0.185) 0px -10px 3px 1px;
+    color: rgb(155, 155, 155);
+    box-shadow: inset rgba(60, 76, 148, 0.185) 0px -10px 3px 1px;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(252, 252, 252);
     border-bottom: 2px solid black;
 }
 .div-button-form-anuncio{
@@ -345,7 +346,7 @@
     background-image: url('../NavBar/black-logo-tora.png');
     border-bottom: 22px solid #d8d8d8;
     margin-bottom: 15px;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(12, 78, 137);
 }
 
 

@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { io } from "socket.io-client";
+import { io, Socket } from "socket.io-client";
 import { EnviarProposta } from "../../Server/Server/EnviarProposta";
 
 export const AuthContext = createContext();
@@ -27,8 +27,14 @@ export function AuthContextProvider({ children }) {
   }
 
   function SelecionarSala() {
+    alert('select room')
     socket.emit("select_room", {
       room: email,
+    });
+    socket.on("msg", (data) => {
+      console.log('get')
+      console.log(data);
+      setMensagems(data);
     });
   }
 
@@ -40,6 +46,7 @@ export function AuthContextProvider({ children }) {
       id: id,
     });
     socket.on("msg", (data) => {
+      console.log('get')
       console.log(data);
       setMensagems(data);
     });

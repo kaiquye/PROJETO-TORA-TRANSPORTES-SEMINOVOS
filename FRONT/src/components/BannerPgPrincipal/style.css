@@ -87,6 +87,7 @@ input{
     font-size: 15px;
     padding: 15px;
     border: none;
+    background-color: rgba(230, 230, 230, 0.768);
 }
 .div-filtro-marca-modelo  input:focus {
     box-shadow: 0 0 0 0;
@@ -95,6 +96,7 @@ input{
 .div-filtro-marca-modelo  select{
     padding : 12px;
     border: none;
+    background-color: rgba(230, 230, 230, 0.768);
 }
 .div-filtro-marca-modelo button {
     width: 150px;
@@ -128,5 +130,8 @@ input{
   .btn-banner{
       display: grid;
       grid-template-columns: auto auto auto;
+  }
+  .div-image-det-banner{
+      display: none;
   }
 }
