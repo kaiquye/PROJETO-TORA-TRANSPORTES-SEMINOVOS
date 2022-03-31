@@ -50,9 +50,6 @@ function Home() {
                 <label className="label2">
                 TORA | seminovos
                 </label>
-                <button>
-                  Quem somos
-                </button>
               </div>
               <div className="AnuncioDestaqueHome">
                 <h1 style={{ color: "#ff7300" }}>Destaque</h1>

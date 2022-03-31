@@ -48,7 +48,6 @@
 }
 .mensagemHome .label1 {
     width: 70%;
-    font-size: 30px;
     height: 50px;
     align-items: flex-start;
     color: white;
@@ -61,7 +60,6 @@
     align-items: center;
     width: 30%;
     height: 40px;
-    font-size: 30px;
     align-items: flex-start;
     color: orange;
     background-color: rgb(255, 255, 255); 
@@ -115,6 +113,12 @@
     .AnuncioDestaqueHome{
         display: none;
     }
+    .mensagemHome{
+        font-size: 12px;
+    }
+    .mensagemHome .label1{
+        width: 38%;
+    }
 }
 @media (max-width: 880px){
     .section_home{
@@ -136,5 +140,8 @@
     }
     .mensagemHomeSpace{
         opacity: 0%;
+    }
+    .mensagemHome{
+        display: none;
     }
 }

@@ -211,8 +211,8 @@ export function TabelaAnuncios(props) {
                                   />
                                 </td>
                                 <td className="id_anuncio">{anuncio.id}</td>
-                                <td style={{ width: '300px' }} className="til_anuncio">
-                                  <Link
+                                <td style={{ width: '300px', marginLeft : '25px' }} className="til_anuncio">
+                                  <Link style={{ width: '300px', marginLeft : '15px' }} 
                                     to={`/anuncio/${anuncio.VEICULO_id}/${anuncio.MODELO_VEI}`}
                                     target="_blank"
                                   >
@@ -233,7 +233,7 @@ export function TabelaAnuncios(props) {
                                         ref_list.current.style.display = 'flex'
                                       }}
                                     >
-                                      <img src={mensagem} style={{width : '15px'}} />
+                                      <img src={mensagem} style={{width : '22px'}} />
                                     </button>
 
                                   </div>
