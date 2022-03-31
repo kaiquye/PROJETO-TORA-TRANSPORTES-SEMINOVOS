@@ -1,0 +1,99 @@
+.main-quemsomos{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.pag{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+  
+}
+.page-inicial{
+    width: 100%;
+    height: 95vh;
+    background-image: url('../../components/BannerPgPrincipal/image/capa_folder_rjsp_v9_horizontal.jpg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-page1{
+    width: 100%;
+    color: rgb(216, 216, 216);
+    background-color: rgba(0, 0, 0, 0.144);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}
+.info-page1 button{
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 30%;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.page-2{
+    width: 100%;
+    background-size: 100%;
+}
+.info-page2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.info-page2 h1 {
+    font-size: 45px;
+    color: orange;
+}
+.info-page2 p {
+    font-size: 25px;
+    color: green;
+    font-weight: 500;
+}
+.info-page2 label{
+    padding: 60px;
+    text-align: center;
+}
+.page-3{
+    background-color: purple;
+    background-image: url('../../components/BannerPgPrincipal/image/chuttersnap-BNBA1h-NgdY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: right;
+}
+.page-4{
+    background-color: sandybrown;
+    background-image: url('../../components/BannerPgPrincipal/image/banner_transportes.jpg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: left;
+}
+.page-5{
+    background-color: orange;
+    background-image: url('../../components/BannerPgPrincipal/image/mapa_terminais_verde-1-768x693.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.page-6{
+    background-image: url('../../components/BannerPgPrincipal/image/Imagem-Tora-multimodal_Divulgacao.jpg');
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center;
+}

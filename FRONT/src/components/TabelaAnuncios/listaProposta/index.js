@@ -6,15 +6,20 @@ export function ListaPropostas(props) {
     <section className="lista-propostas">
       <div className="lista-pr">
         {props.listProposta ?
+        
           <div className="lista-propostas-">
             {
               props.listProposta.map((proposta) => (
                 <div className="div-mensagem">
-                  <label><strong>E-mail</strong> {proposta.nome}  </label>
-                  <label><strong>interesse : </strong> {proposta.modelo} </label>
-                  <label><strong>identificação : </strong> {proposta.id}</label>
-                  <label style={{ textAlign: 'end' }} ><strong>Contato : </strong> {proposta.email}</label>
+                  {
+                console.log(proposta)
+                  }
+                  <label><strong>E-mail</strong> {proposta.email || proposta.email_CLI}  </label>
+                  <label><strong>interesse : </strong> {proposta.modelo || proposta.modelo_vei} </label>
+                  <label><strong>identificação : </strong> {proposta.id || proposta.VEICULO_id}</label>
+                  <label style={{ textAlign: 'end' }} ><strong>Contato : </strong> {proposta.telefone}</label>
                   <p><strong>Assunto :</strong> {proposta.proposta}</p>
+                  <h3>Nome : {proposta.nome || proposta.nome_CLI}</h3>
                   <div className='button-list-propostas'>
                     <button>RESPONDER</button>
                     <button>EXCLUIR</button>

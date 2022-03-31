@@ -56,13 +56,13 @@
     align-items: center;
 }
 .mensagemHome .label2{
-    display: flex;
-    align-items: center;
     width: 30%;
-    height: 40px;
+    height: 50px;
     align-items: flex-start;
     color: orange;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
 }
 .mensagemHome button{
     padding: 6px;

@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     overflow: hidden;
-    opacity: 60%;
+    opacity: 80%;
     transition: all 1.0s;
 }
 .lista-propostas:hover{
@@ -12,7 +12,8 @@
     width: 100%;
     overflow: auto;
     display: grid;
-    grid-template-columns: auto  auto auto;
+    grid-template-columns: auto auto;
+    border: rgb(108, 189, 255) solid 1px;
 }
 .lista-pr{
     width: 100%;
@@ -28,13 +29,14 @@
     display: flex;
     transition:  all 1.0s;
     overflow: hidden;
-    border-bottom: 2px solid rgb(120, 120, 120);
+    border-bottom: 2px solid rgb(201, 201, 201);
     font-family: Arial, Helvetica, sans-serif;
-    opacity: 30%;
+    opacity: 70%;
     font-size: 13px;
     cursor: pointer;
     padding: 10px;
     padding-bottom: 25px;
+    border: 3px solid rgb(223, 223, 223);
 }
 .div-mensagem button{
     border: none;

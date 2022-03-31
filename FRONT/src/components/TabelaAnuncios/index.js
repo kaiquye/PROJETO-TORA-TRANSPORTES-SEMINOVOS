@@ -1,7 +1,7 @@
 import { AuthContext } from "../../context/ContextAdm";
 import { useContext, useEffect, useState, useRef } from "react";
 import { UploadImgF } from "./input/index";
-import imagem_cam from './campanha.png'
+import imagem_cam from "./campanha.png";
 import { Link } from "react-router-dom";
 import {
   CarouselProvider,
@@ -10,7 +10,7 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
-import mensagem from './enviar-mensagem.png'
+import mensagem from "./enviar-mensagem.png";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Sliderimg } from "./Slider/slider";
 import { useNavigate } from "react-router-dom";
@@ -37,6 +37,8 @@ export function TabelaAnuncios(props) {
   const ref = useRef();
   const ref2 = useRef();
   const ref_list = useRef();
+  const ref_propostasDb = useRef();
+  const ref_propostasSocket = useRef();
 
   const {
     BuscarTodosanuncios,
@@ -59,7 +61,8 @@ export function TabelaAnuncios(props) {
     listProposta,
     delChat,
     BuscarTodosMensagens,
-    SelecionarSala
+    buscarTodasPropostasDb,
+    SelecionarSala,
   } = useContext(AuthContext);
   const [placa, setPlaca] = useState();
   const [id, setId] = useState();
@@ -81,13 +84,13 @@ export function TabelaAnuncios(props) {
   const [Modelo, setModelo] = useState();
   const [Ano, setAno] = useState();
   const [Cor, setCor] = useState();
-  const [proposta, setPropostas]=useState();
+  const [proposta, setPropostas] = useState();
   const Navigate = useNavigate();
 
   useEffect(() => {
     BuscarTodosanuncios();
   }, []);
-  
+
   useEffect(() => {
     BuscarInformacoes();
   }, [anuncios]);
@@ -98,15 +101,41 @@ export function TabelaAnuncios(props) {
         <div className="mensagem-listadeanuncios">
           <h1>PAINEL DE ADMINISTRADORES</h1>
         </div>
-        <div className="wallpaper_adm" >
-        </div>
-        <div className="listas-proposta" >
-          <p>Propostas</p>
-          <button onClick={()=> {
-            BuscarTodosMensagens(setPropostas);
-          }}>
-            CARREGAR PROPOSTAS
+        <div className="wallpaper_adm"></div>
+        <div className='button-propotas' >
+          <button
+            onClick={() => {
+              BuscarTodosMensagens(setPropostas);
+              ref_propostasDb.current.style.display = "none";
+              ref_propostasSocket.current.style.display = "flex";
+            }}
+          >
+            ULTIMAS PROPOSTAS
           </button>
+          <button
+            onClick={() => {
+              ref_propostasDb.current.style.display = "flex";
+              ref_propostasSocket.current.style.display = "none";
+              buscarTodasPropostasDb(setPropostas);
+            }}
+          >
+            TODAS PROPOSTAS
+          </button>
+        </div>
+        <div ref={ref_propostasSocket} className="listas-proposta">
+          <div className="mensagem-ps">
+            <p>Suas ultimas propostas</p>
+          </div>
+          <ListaPropostas listProposta={proposta} />
+        </div>
+        <div
+          ref={ref_propostasDb}
+          style={{ display: "none" }}
+          className="listas-proposta"
+        >
+          <div className="mensagem-ps">
+            <p>Todas propostas</p>
+          </div>
           <ListaPropostas listProposta={proposta} />
         </div>
         <Dahsboard Qts={QtsAnuncios.qts} />
@@ -161,7 +190,7 @@ export function TabelaAnuncios(props) {
                 <p>Ação</p>
               </div>
             </div>
-            <div className="div-main-table" >
+            <div className="div-main-table">
               {QtsAnuncios && console.log("anuncios", QtsAnuncios)}
               <Filtros Filtro={filtroDahs} />
               <div className="div-table">
@@ -188,17 +217,27 @@ export function TabelaAnuncios(props) {
                             {anuncios.map((anuncio, key) => (
                               <tr className={key % 2 ? "teste" : "teste2"}>
                                 <td>
-                                  <img src={imagem_cam} style={{ width: '18px' }} />
+                                  <img
+                                    src={imagem_cam}
+                                    style={{ width: "18px" }}
+                                  />
                                   <input
                                     type="checkbox"
                                     onChange={(e) => {
-                                      Negociacao(anuncio.VEICULO_id)
+                                      Negociacao(anuncio.VEICULO_id);
+                                    }}
+                                    checked={
+                                      anuncio.NEGOCIACAO_VEI ? false : true
                                     }
+                                    value={
+                                      anuncio.NEGOCIACAO_VEI ? true : false
                                     }
-                                    checked={anuncio.NEGOCIACAO_VEI ? false : true}
-                                    value={anuncio.NEGOCIACAO_VEI ? true : false}
                                   />
-                                  {anuncio.NEGOCIACAO_VEI ? <label>NGC</label> : ''}
+                                  {anuncio.NEGOCIACAO_VEI ? (
+                                    <label>NGC</label>
+                                  ) : (
+                                    ""
+                                  )}
                                 </td>
                                 <td>
                                   <input
@@ -211,8 +250,15 @@ export function TabelaAnuncios(props) {
                                   />
                                 </td>
                                 <td className="id_anuncio">{anuncio.id}</td>
-                                <td style={{ width: '300px', marginLeft : '25px' }} className="til_anuncio">
-                                  <Link style={{ width: '300px', marginLeft : '15px' }} 
+                                <td
+                                  style={{ width: "300px", marginLeft: "25px" }}
+                                  className="til_anuncio"
+                                >
+                                  <Link
+                                    style={{
+                                      width: "300px",
+                                      marginLeft: "15px",
+                                    }}
                                     to={`/anuncio/${anuncio.VEICULO_id}/${anuncio.MODELO_VEI}`}
                                     target="_blank"
                                   >
@@ -226,16 +272,18 @@ export function TabelaAnuncios(props) {
                                   <div>
                                     <button
                                       onClick={() => {
-                                        alert('button', anuncio.VEICULO_id)
-                                        setModelo(anuncio.MODELO_VEI)
-                                        setId(anuncio.VEICULO_id)
-                                        getListMsg(anuncio.VEICULO_id)
-                                        ref_list.current.style.display = 'flex'
+                                        alert("button", anuncio.VEICULO_id);
+                                        setModelo(anuncio.MODELO_VEI);
+                                        setId(anuncio.VEICULO_id);
+                                        getListMsg(anuncio.VEICULO_id);
+                                        ref_list.current.style.display = "flex";
                                       }}
                                     >
-                                      <img src={mensagem} style={{width : '22px'}} />
+                                      <img
+                                        src={mensagem}
+                                        style={{ width: "22px" }}
+                                      />
                                     </button>
-
                                   </div>
 
                                   <button
@@ -246,8 +294,12 @@ export function TabelaAnuncios(props) {
                                       setAno(anuncio.ANO_VEI);
                                       setPlaca(anuncio.PLACA_VEI);
                                       setCabine(anuncio.CABINE_VEI);
-                                      setCombustivel(anuncio.CAP_COMBUSTIVEL_VEI);
-                                      setDiferencial(anuncio.REL_DIFERENCIAL_VEI);
+                                      setCombustivel(
+                                        anuncio.CAP_COMBUSTIVEL_VEI
+                                      );
+                                      setDiferencial(
+                                        anuncio.REL_DIFERENCIAL_VEI
+                                      );
                                       setEixo(anuncio.ENT_EIXO_VEI);
                                       setKm(anuncio.KM_VEI);
                                       setObs(anuncio.OBS_VEI);
@@ -261,8 +313,10 @@ export function TabelaAnuncios(props) {
                                       setFabricante(anuncio.MARCA_VEI);
                                       Buscar_Imagem(anuncio.VEICULO_id);
                                       setModelo(anuncio.MODELO_VEI);
-                                      alert(anuncio.MARCA_VEI)
-                                      if (ref.current.style.display === "none") {
+                                      alert(anuncio.MARCA_VEI);
+                                      if (
+                                        ref.current.style.display === "none"
+                                      ) {
                                         ref.current.style.display = "flex";
                                       }
                                     }}
@@ -302,7 +356,7 @@ export function TabelaAnuncios(props) {
           <div className="btn_fecha">
             <button className="minimizar">-</button>
             <button
-              style={{ backgroundColor: "red", paddingBottom: '1px' }}
+              style={{ backgroundColor: "red", paddingBottom: "1px" }}
               onClick={() => {
                 if (window.confirm("Deseja cancelar ? ")) {
                   document.location.reload();
@@ -531,17 +585,37 @@ export function TabelaAnuncios(props) {
             </div>
           </div>
         </div>
-        <div className="modal-mensagens" style={{ display: 'none' }} ref={ref_list}>
+        <div
+          className="modal-mensagens"
+          style={{ display: "none" }}
+          ref={ref_list}
+        >
           <div className="div-buttons-msg">
-            <button className="minize-btn-msg" onClick={()=>{
-              ref_list.current.style.display = 'none'
-            }}>-</button>
-          <button className="fechar-btn-msg" onClick={()=>{
-            document.location.reload();
-          }} >X</button>
+            <button
+              className="minize-btn-msg"
+              onClick={() => {
+                ref_list.current.style.display = "none";
+              }}
+            >
+              -
+            </button>
+            <button
+              className="fechar-btn-msg"
+              onClick={() => {
+                document.location.reload();
+              }}
+            >
+              X
+            </button>
           </div>
-          <ListMsg getListMsg={getListMsg} modelo={Modelo} id={id}  message={message}  delChat={delChat} />
-         </div>
+          <ListMsg
+            getListMsg={getListMsg}
+            modelo={Modelo}
+            id={id}
+            message={message}
+            delChat={delChat}
+          />
+        </div>
       </div>
       <div className="divnovoanuncio">
         <button

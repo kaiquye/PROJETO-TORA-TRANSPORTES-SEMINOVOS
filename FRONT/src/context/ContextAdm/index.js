@@ -373,10 +373,21 @@ export function AuthContextProvider({ children }) {
        state(data)
     })
   };
+  let buscarTodasPropostasDb = async (state) =>{
+     if(state){
+        try {
+           let propostas = await BuscarTodasPropostas()
+           state(propostas)
+        } catch (error) {
+            alert('Erroooooooooooooooooooooooooooor')      
+        }
+    }
+  }
   return (
     <AuthContext.Provider
       value={{
         PageLoading,
+        buscarTodasPropostasDb,
         Loading,
         BuscarInformacoes_sit,
         BuscarTodosanuncios,

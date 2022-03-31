@@ -41,7 +41,7 @@ export function Sobre() {
                 </div>
             </div>
             <div className='div_maps_SobreHome'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15003.775197066048!2d-44.051447!3d-19.926773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa4c68c939485dbf!2sTORA%20TRANSPORTES%20-%20MATRIZ!5e0!3m2!1spt-BR!2sbr!4v1646921417556!5m2!1spt-BR!2sbr"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15003.775197066048!2d-44.051447!3d-19.926773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa4c68c939485dbf!2sTORA%20TRANSPORTES%20-%20MATRIZ!5e0!3m2!1spt-BR!2sbr!4v1646921417556!5m2!1spt-BR!2sbr" width={{width : '10px'}} style={{border : '0px'}}></iframe>
                 </div>
         </div>
     )

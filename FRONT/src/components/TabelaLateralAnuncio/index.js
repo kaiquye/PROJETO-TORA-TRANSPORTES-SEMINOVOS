@@ -32,7 +32,7 @@ export function Lateral(props) {
       </div>
       <div className="div_lateral_2">
         <div className="imagem_lateral">
-          <img src={img1} />
+          <img style={{width : '55px'}} src={img1} />
         </div>
         <div className="div_contato_lateral">
           <label>
