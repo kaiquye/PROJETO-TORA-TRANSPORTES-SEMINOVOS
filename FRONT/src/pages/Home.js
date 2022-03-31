@@ -43,20 +43,26 @@ function Home() {
             <ComponenteErro error={error.menssage} />
           ) : (
             <>
-              <div>
-                <h1 className="mensagemHome">
+              <div className="mensagemHome" >
+                <label className="label1" >
                   As melhores opções de veiculos seminovos
-                </h1>
+                </label>
+                <label className="label2">
+                TORA | seminovos
+                </label>
+                <button>
+                  Quem somos
+                </button>
               </div>
               <div className="AnuncioDestaqueHome">
                 <h1 style={{ color: "#ff7300" }}>Destaque</h1>
                 <Destaque />
               </div>
-              <div>
+              {/* <div>
                 <h1 className="mensagemHome">
                   Nossos melhores seminovos
                 </h1>
-              </div>
+              </div> */}
               <div>{<Data setOrdem={setOrdem} />}</div>
               <ListaAnuncios />
               {ref === true ? <Proximo /> : <h3>Fim</h3>}

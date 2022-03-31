@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { runWithAdal } from "react-adal";
 import { authContext, getToken } from "../adalConfig/index";
 import { useState, useEffect } from "react";
+import porta from './Style/bater-papo.png'
 
 export function PropostaAdm() {
     const [TROCADEPOIS, setTROCA] = useState(false)
@@ -51,11 +52,13 @@ export function PropostaAdm() {
     return (
         <section className="princial-proposta">
             <div className="img-proposta">
+                    <img style={{width : '150px'}} src={porta} />
                 <p>Lembre-se de apagar a conversar quando sair</p>
             </div>
             <div className="conteudo-proposta" >
                 <div className="buttons-escolhar-proposta" ref={ref_button} >
-                    <button
+                    <img style={{width : '150px'}} src={porta} />
+                    <button className="button-entrar-sala-adm"
                         onClick={() => {
                             ref_button.current.style.display = 'none'
                             ref_chat.current.style.display = 'flex'

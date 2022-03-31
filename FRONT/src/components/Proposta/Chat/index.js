@@ -44,7 +44,6 @@ export function Chat(props) {
                   >
                     <p><stron>{mensagem.user}
                   <img style={{  width : '20px' }} src={pessoas} />
-
                     </stron></p>
                     <label>{mensagem.msg}
                     </label>

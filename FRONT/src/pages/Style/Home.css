@@ -30,17 +30,48 @@
     font-size: 10px;
     text-align: start;
     border-radius: 88px ;
-    
     text-align: center;
 }
+
 .mensagemHome{
-    color: rgb(58, 58, 58);
-    height: 60px;
+    width: 100%;
+    height: 200px;
     font-size: 23px;
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../Style/quemsomos.jpg');
+    flex-direction: column;
+}
+.mensagemHome .label1 {
+    width: 70%;
+    font-size: 30px;
+    height: 50px;
+    align-items: flex-start;
+    color: white;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+}
+.mensagemHome .label2{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 40px;
+    font-size: 30px;
+    align-items: flex-start;
+    color: orange;
+    background-color: rgb(255, 255, 255); 
+}
+.mensagemHome button{
+    padding: 6px;
+    border: none;
+    width: 10%;
+    background-color: green;
+    color: rgb(255, 255, 255);
 }
 .banner_home{
     width: 100%;

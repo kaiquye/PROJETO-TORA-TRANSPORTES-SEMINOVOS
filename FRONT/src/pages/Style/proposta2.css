@@ -64,3 +64,15 @@
   color: white;
   cursor: pointer;
 }
+.button-entrar-sala-adm{
+  width: 50%;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.button-entrar-sala-adm:hover{
+  background-color: grey;
+  color: rgb(255, 255, 255);
+}
