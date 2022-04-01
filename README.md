@@ -50,42 +50,6 @@ node  .\src\main.js
 ## Confirmações 
 -  Esse projeto foi desenvolvido como parte do meu **Plano de desenvolvimento individual (PDI)** na empresa **Tora Transporte**
 
-# Login com React-Adal
-> Clique em **Sou Administrador**
-![image](https://user-images.githubusercontent.com/69175890/161146409-39fdcc13-7633-4ac8-8783-4e86ed316d6c.png)
-
-
-> Faça login com sua conta **Office 365 do grupo Tora**.
->[image](https://user-images.githubusercontent.com/69175890/161144356-cdaf4850-969b-438e-9697-48d88c13af1f.png)
-
-# Painel de administrador
-
-## Novas propostas. 
-- Todos formularios de propostas preenchidos ficam listados nesta tela. 
-- O primeiro botão (**Ultimas propostas**) busca as ultimas propostas, ( salvas no WebSocket )
->![image](https://user-images.githubusercontent.com/69175890/161254262-ec9a990b-4226-4496-b720-a6b795dd7569.png)
-
-
-- O segundo botão (**Todas propostas**) busca todas as propostas feitas ( salvas no Banco de dados ).
-
-![image](https://user-images.githubusercontent.com/69175890/161254402-5cb75d98-5911-475f-8ba0-e712b5c9c49c.png)
-
-## Tabela de anuncios
-### Listas de anuncios cadastrados
-- **Primeiro CheckBox** : Aplica o filtro "Em negociação"
-- **Segundo CheckBox** : Ativa ou desativa o anuncio, ( Não exclui do banco de dados ).
-- **Ultimo botão** ( X ) : Excluir o anuncio. 
-![image](https://user-images.githubusercontent.com/69175890/161253840-1b868a4b-9c28-49a1-8463-fb971a8335d4.png)
-
-- **Botão de mensagem** : Lista todas as mensagens que aquele anuncio recebeu pelo Chat.(Cada anuncio tem sua propria aba com a listagem das mensagens) **Responder** : Abre o chat para que o ADM possa responder o usuario.
-
->![image](https://user-images.githubusercontent.com/69175890/161150260-b61f79f7-d903-4174-977c-e6b05e691d0b.png)
-
-- **Botão edição** : Edita as informações do anuncio.
-
->![image](https://user-images.githubusercontent.com/69175890/161150728-f664ade8-52c8-4ae5-956b-fd9135d5454d.png)
-
-
 # HomePage
 
 ### Filtro 
@@ -107,27 +71,58 @@ node  .\src\main.js
 - 
 > ![image](https://user-images.githubusercontent.com/69175890/161254735-c9b99282-ee45-4d50-ad25-ddeb1e686fc1.png)
 
-
 # Entrar em contato 
 
 > ![image](https://user-images.githubusercontent.com/69175890/161254891-6371f619-e0b0-4c2f-a8f2-c5027acf9a06.png)
 
-### Chat : Uma nova sala é criar. Nela o usuario pode conversa com o vendendor. 
+- **Chat** : Uma nova sala é criar. Nela o usuario pode conversa com o vendendor. 
 > ![image](https://user-images.githubusercontent.com/69175890/161254952-88dbe69f-e1ed-4690-99d8-f339660d1186.png)
 
 > ![image](https://user-images.githubusercontent.com/69175890/161255063-fe6b065c-86c0-4b13-a66e-a5e80eab77f2.png)
 
-### Formulario : Esse formulario é salvo no banco de dados relacionado junto ao anuncio escolhido.
+- **Formulario** : Esse formulario é salvo no banco de dados relacionado junto ao anuncio escolhido.
 > ![image](https://user-images.githubusercontent.com/69175890/161255328-59ebefe2-31a0-4bfd-be49-c573ae3a0a3d.png)
 
 # Informações do anuncio
-### **Lateral** : Mostra algumas informações, como : Modelo, Potencia, Kilometragem... 
+- **Lateral** : Mostra algumas informações, como : Modelo, Potencia, Kilometragem... 
+> ![image](https://user-images.githubusercontent.com/69175890/161285703-25ecf249-760b-4f66-a201-42feb3e15cb5.png)
+
+- **Ficha tecnica** : Mostra a ficha tecnica do veiculo.
+> ![image](https://user-images.githubusercontent.com/69175890/161286018-a8deb740-0fc9-4463-97d1-408ad65f1425.png)
+
+# Login com React-Adal
+> Clique em **Sou Administrador**
+![image](https://user-images.githubusercontent.com/69175890/161146409-39fdcc13-7633-4ac8-8783-4e86ed316d6c.png)
 
 
-### **Ficha tecnica** : Mostra a ficha tecnica do veiculo.
+> Faça login com sua conta **Office 365 do grupo Tora**.
+> ![image](https://user-images.githubusercontent.com/69175890/161286781-74341951-4b5f-47cd-8cda-75403750853d.png)
 
+# Painel de administrador
 
+## Novas propostas. 
+- Todos formularios de propostas preenchidos ficam listados nesta tela. 
+- O primeiro botão (**Ultimas propostas**) busca as ultimas propostas, ( salvas no WebSocket )
+>![image](https://user-images.githubusercontent.com/69175890/161254262-ec9a990b-4226-4496-b720-a6b795dd7569.png)
 
+- O segundo botão (**Todas propostas**) busca todas as propostas feitas ( salvas no Banco de dados ).
+
+![image](https://user-images.githubusercontent.com/69175890/161254402-5cb75d98-5911-475f-8ba0-e712b5c9c49c.png)
+
+## Tabela de anuncios
+### Lista de anuncios cadastrados
+- **Primeiro CheckBox** : Aplica o filtro "Em negociação"
+- **Segundo CheckBox** : Ativa ou desativa o anuncio, ( Não exclui do banco de dados ).
+- **Ultimo botão** ( X ) : Excluir o anuncio. 
+![image](https://user-images.githubusercontent.com/69175890/161253840-1b868a4b-9c28-49a1-8463-fb971a8335d4.png)
+
+- **Botão de mensagem** : Lista todas as mensagens que aquele anuncio recebeu pelo Chat.(Cada anuncio tem sua propria aba com a listagem das mensagens) **Responder** : Abre o chat para que o ADM possa responder o usuario.
+
+>![image](https://user-images.githubusercontent.com/69175890/161150260-b61f79f7-d903-4174-977c-e6b05e691d0b.png)
+
+- **Botão edição** : Edita as informações do anuncio.
+
+>![image](https://user-images.githubusercontent.com/69175890/161150728-f664ade8-52c8-4ae5-956b-fd9135d5454d.png)
 
 ======================================================
 # Processo GIT
