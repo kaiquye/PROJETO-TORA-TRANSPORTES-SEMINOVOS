@@ -72,12 +72,12 @@ node  .\src\main.js
 > ![image](https://user-images.githubusercontent.com/69175890/161254735-c9b99282-ee45-4d50-ad25-ddeb1e686fc1.png)
 
 # Entrar em contato 
-
+- Nesta pagina o usuario pode escolher : Sala de Bate-Papo ou preencher um formulario. 
 > ![image](https://user-images.githubusercontent.com/69175890/161254891-6371f619-e0b0-4c2f-a8f2-c5027acf9a06.png)
 
 - **Chat** : Uma nova sala é criar. Nela o usuario pode conversa com o vendendor. 
 > ![image](https://user-images.githubusercontent.com/69175890/161254952-88dbe69f-e1ed-4690-99d8-f339660d1186.png)
-
+- Sala de bate-papo
 > ![image](https://user-images.githubusercontent.com/69175890/161255063-fe6b065c-86c0-4b13-a66e-a5e80eab77f2.png)
 
 - **Formulario** : Esse formulario é salvo no banco de dados relacionado junto ao anuncio escolhido.
