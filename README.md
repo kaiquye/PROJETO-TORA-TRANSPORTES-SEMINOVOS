@@ -119,11 +119,28 @@ node  .\src\main.js
 - **Botão de mensagem** : Lista todas as mensagens que aquele anuncio recebeu pelo Chat.(Cada anuncio tem sua propria aba com a listagem das mensagens) **Responder** : Abre o chat para que o ADM possa responder o usuario.
 
 >![image](https://user-images.githubusercontent.com/69175890/161150260-b61f79f7-d903-4174-977c-e6b05e691d0b.png)
+- **Quando a negociação acaber, o administrador ou cliente devem apagar a conversar.**
+> ![image](https://user-images.githubusercontent.com/69175890/161288476-186d0f05-ffaf-4eb5-8906-a1a59aa9fde6.png)
+
 
 - **Botão edição** : Edita as informações do anuncio.
 
 >![image](https://user-images.githubusercontent.com/69175890/161150728-f664ade8-52c8-4ae5-956b-fd9135d5454d.png)
 
+#Regras
+- Um cliente tem um limite de 3 propostas.
+- A sala de bate-papo fica ativa por 24 Horas.
+- 
+
+#Backend
+-Estrutura de pastas
+>
+-Padrões de projetos utilizados
+>
+#FrontEnd
+-Estrutura de pastas
+>
+-Padrões de projetos utilizados
 ======================================================
 # Processo GIT
 ### Primeira vez (não tenho o repositorio na minha maquina)
