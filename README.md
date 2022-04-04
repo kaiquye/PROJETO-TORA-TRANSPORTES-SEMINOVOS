@@ -54,7 +54,7 @@ node  .\src\main.js
 
 ### Filtro 
 - **Marcas** : Cada botão representa um filtro. Exemplo : **VOLVO** Buscar todos veiculos da marca **Volvo**......
-- **Situação do veiculo** : Buscar anuncios disponivel para venda ou em negociação.
+- **Situação do veiculo** : Buscar anuncios disponiveis para venda ou em negociação.
 - **Data de publicação** : Filtra a data de publicação do anuncio.
 - **Sedan** : Buscar todos os carros anunciados.
 - **Truck** : Buscar todos os caminhões anunciados.
@@ -72,15 +72,15 @@ node  .\src\main.js
 > ![image](https://user-images.githubusercontent.com/69175890/161254735-c9b99282-ee45-4d50-ad25-ddeb1e686fc1.png)
 
 # Entrar em contato 
-- Nesta pagina o usuario pode escolher : Sala de Bate-Papo ou preencher um formulario. 
+- Nesta pagina o usuario pode escolher : Sala de Bate-Papo ou preencher formulário. 
 > ![image](https://user-images.githubusercontent.com/69175890/161254891-6371f619-e0b0-4c2f-a8f2-c5027acf9a06.png)
 
-- **Chat** : Uma nova sala é criar. Nela o usuario pode conversa com o vendendor. 
+- **Chat** : Uma nova sala é criar. Nela o usuario pode conversar com o vendedor. 
 > ![image](https://user-images.githubusercontent.com/69175890/161254952-88dbe69f-e1ed-4690-99d8-f339660d1186.png)
 - Sala de bate-papo
 > ![image](https://user-images.githubusercontent.com/69175890/161255063-fe6b065c-86c0-4b13-a66e-a5e80eab77f2.png)
 
-- **Formulario** : Esse formulario é salvo no banco de dados relacionado junto ao anuncio escolhido.
+- **Formulário** : Esse formulário é salvo no banco de dados relacionado junto ao anuncio escolhido.
 > ![image](https://user-images.githubusercontent.com/69175890/161255328-59ebefe2-31a0-4bfd-be49-c573ae3a0a3d.png)
 
 # Informações do anuncio
@@ -101,7 +101,7 @@ node  .\src\main.js
 # Painel de administrador
 
 ## Novas propostas. 
-- Todos formularios de propostas preenchidos ficam listados nesta tela. 
+- Todos formulários de propostas preenchidos ficam listados nesta tela. 
 - O primeiro botão (**Ultimas propostas**) busca as ultimas propostas, ( salvas no WebSocket )
 >![image](https://user-images.githubusercontent.com/69175890/161254262-ec9a990b-4226-4496-b720-a6b795dd7569.png)
 
