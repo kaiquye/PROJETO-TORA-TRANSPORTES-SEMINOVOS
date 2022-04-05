@@ -53,9 +53,9 @@ node  .\src\main.js
 # HomePage
 
 ### Filtro 
-- **Marcas** : Cada botão representa um filtro. Exemplo : **VOLVO** Buscar todos veiculos da marca **Volvo**......
+- **Marcas** : Cada botão representa um filtro. Exemplo : **VOLVO** Buscar todos os veiculos da marca **Volvo**......
 - **Situação do veiculo** : Buscar anuncios disponiveis para venda ou em negociação.
-- **Data de publicação** : Filtra a data de publicação do anuncio.
+- **Data da publicação** : Filtra a data de publicação do anuncio.
 - **Sedan** : Buscar todos os carros anunciados.
 - **Truck** : Buscar todos os caminhões anunciados.
 - **SemiReboque** : Buscar todo os reboques anunciados.
