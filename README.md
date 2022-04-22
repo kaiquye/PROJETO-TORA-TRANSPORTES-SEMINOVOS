@@ -1,5 +1,5 @@
 
-# PROJETO TORA | SEMINOVOS
+# PROJETO TORA | SEMINOVOS 🚛
 
 Projeto feito para **TORA TRANSPORTES**. Este projeto foi desenvolvido em meu **Plano de desenvolvimento individual (PDI)** 
 
@@ -8,7 +8,7 @@ Projeto feito para **TORA TRANSPORTES**. Este projeto foi desenvolvido em meu **
 
 Projeto desenvolvido em **React.JS** e **Node.Js VERSION 17.8.0**. 
 
-### Pré-requisitos
+###  🏗️  Pré-requisitos 
 
 Para iniciar o projeto localmente : 
 - download NodeJs VERSION 17.8.0 https://nodejs.org/en/download/ 
@@ -24,13 +24,13 @@ node  .\src\main.js
 ##### Porta do servidor : 
 > localhost:3000
 
-# **Construido com**
+# ⚙️  **Construido com**
 ### Frontend
 - React.JS
 - ReactRouterDom
 - Axios
 - Socket.io 
-- React-Adal 365 
+- React-Adal 365 (Autenticação com office 365)
 ### Backend
 - Node.Js
 - Knex
@@ -44,10 +44,8 @@ node  .\src\main.js
 - Cors
 - sharp
 
-## Autor 
+# 🧍 Autor 
 - Kaique Mendes da Silva
-
-## Confirmações 
 -  Esse projeto foi desenvolvido como parte do meu **Plano de desenvolvimento individual (PDI)** na empresa **Tora Transporte**
 
 # HomePage
