@@ -52,36 +52,24 @@ node  .\src\main.js
 
 ### Filtro 
 - **Marcas** : Cada botão representa um filtro. Exemplo : **VOLVO** Buscar todos os veiculos da marca **Volvo**......
-- **Situação do veiculo** : Buscar anuncios disponiveis para venda ou em negociação.
-- **Data da publicação** : Filtra a data de publicação do anuncio.
+- **Situação do veiculo** : Buscar anúncios disponiveis para venda ou em negociação.
+- **Data da publicação** : Filtra a data de publicação do anúncio.
 - **Sedan** : Buscar todos os carros anunciados.
 - **Truck** : Buscar todos os caminhões anunciados.
 - **SemiReboque** : Buscar todo os reboques anunciados.
 
 ![image](https://user-images.githubusercontent.com/69175890/161151533-c6f0f4a1-9b95-4705-b4b8-610fd2622028.png)
 
-### Card Anuncio
-- **Fazer proposta** : Abre uma nova aba no navegador. O Usuario pode escolher conversar pelo Chat ou preencher um formulario. ( So é possivel fazer uma nova proposta se o anuncio não estiver em negociação, cada pessoa pode fazer 3 propostas. )
+### Card Anúncio
+- **Fazer proposta** : Abre uma nova aba no navegador. O Usuario pode escolher conversar pelo Chat ou preencher um formulario. ( So é possivel fazer uma nova proposta se o anúncio não estiver em negociação, cada pessoa pode fazer 3 propostas. )
 - 
 > ![image](https://user-images.githubusercontent.com/69175890/161254713-b6f8e11e-8b6e-4e68-9904-2155366a3aa3.png)
 
-- **Visitar** : Abre uma nova aba com as informações do anuncio.
+- **Visitar** : Abre uma nova aba com as informações do anúncio.
 - 
 > ![image](https://user-images.githubusercontent.com/69175890/161254735-c9b99282-ee45-4d50-ad25-ddeb1e686fc1.png)
 
-# Entrar em contato 
-- Nesta pagina o usuario pode escolher : Sala de Bate-Papo ou preencher formulário. 
-> ![image](https://user-images.githubusercontent.com/69175890/161254891-6371f619-e0b0-4c2f-a8f2-c5027acf9a06.png)
-
-- **Chat** : Uma nova sala é criar. Nela o usuario pode conversar com o vendedor. 
-> ![image](https://user-images.githubusercontent.com/69175890/161254952-88dbe69f-e1ed-4690-99d8-f339660d1186.png)
-- Sala de bate-papo
-> ![image](https://user-images.githubusercontent.com/69175890/161255063-fe6b065c-86c0-4b13-a66e-a5e80eab77f2.png)
-
-- **Formulário** : Esse formulário é salvo no banco de dados relacionado junto ao anuncio escolhido.
-> ![image](https://user-images.githubusercontent.com/69175890/161255328-59ebefe2-31a0-4bfd-be49-c573ae3a0a3d.png)
-
-# Informações do anuncio
+# Informações do anúncio
 - **Lateral** : Mostra algumas informações, como : Modelo, Potencia, Kilometragem... 
 > ![image](https://user-images.githubusercontent.com/69175890/161285703-25ecf249-760b-4f66-a201-42feb3e15cb5.png)
 
@@ -107,21 +95,21 @@ node  .\src\main.js
 
 ![image](https://user-images.githubusercontent.com/69175890/161254402-5cb75d98-5911-475f-8ba0-e712b5c9c49c.png)
 
-## Tabela de anuncios
-### Lista de anuncios cadastrados
+## Tabela de anúncios
+### Lista de anúncios cadastrados
 - **Primeiro CheckBox** : Aplica o filtro "Em negociação"
-- **Segundo CheckBox** : Ativa ou desativa o anuncio, ( Não exclui do banco de dados ).
-- **Ultimo botão** ( X ) : Excluir o anuncio. 
+- **Segundo CheckBox** : Ativa ou desativa o anúncio, ( Não exclui do banco de dados ).
+- **Ultimo botão** ( X ) : Excluir o anúncio. 
 ![image](https://user-images.githubusercontent.com/69175890/161253840-1b868a4b-9c28-49a1-8463-fb971a8335d4.png)
 
-- **Botão de mensagem** : Lista todas as mensagens que aquele anuncio recebeu pelo Chat.(Cada anuncio tem sua propria aba com a listagem das mensagens) **Responder** : Abre o chat para que o ADM possa responder o usuario.
+- **Botão de mensagem** : Lista todas as mensagens que aquele anúncio recebeu pelo Chat.(Cada anúncio tem sua propria aba com a listagem das mensagens) **Responder** : Abre o chat para que o ADM possa responder o usuario.
 
 >![image](https://user-images.githubusercontent.com/69175890/161150260-b61f79f7-d903-4174-977c-e6b05e691d0b.png)
 - **Quando a negociação acaber, o administrador ou cliente devem apagar a conversar.**
 > ![image](https://user-images.githubusercontent.com/69175890/161288476-186d0f05-ffaf-4eb5-8906-a1a59aa9fde6.png)
 
 
-- **Botão edição** : Edita as informações do anuncio.
+- **Botão edição** : Edita as informações do anúncio.
 
 >![image](https://user-images.githubusercontent.com/69175890/161150728-f664ade8-52c8-4ae5-956b-fd9135d5454d.png)
 
