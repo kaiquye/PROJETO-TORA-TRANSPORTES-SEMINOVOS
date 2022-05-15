@@ -5,9 +5,9 @@ class Veiculo {
     async Connection(){
         try {
             let con = await oracledb.getConnection({
-                user : 'USU_LEITURA',
-                password : 'US369LEI', 
-                connectString :  'scantoradb:1521/SITPRD'
+                user : '--',
+                password : '--', 
+                connectString :  '--'
             })
             return con
         } catch (error) {
