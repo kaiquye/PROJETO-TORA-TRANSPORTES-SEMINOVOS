@@ -1,6 +1,5 @@
 
 # PROJETO TORA | SEMINOVOS 🚛
-
 Projeto feito para **TORA TRANSPORTES**. Este projeto foi desenvolvido em meu **Plano de desenvolvimento individual (PDI)** 
 
 
